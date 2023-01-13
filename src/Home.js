@@ -1,32 +1,70 @@
-import React from 'react'
+import React from "react";
 import "./Home.css";
-import Product from './Product';
+import Product from "./Product";
 
-export default function Home() {
+function Home() {
   return (
-    <div className='home'>
-      <div classname="home__container">
-        <img className='home_image'
-         src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71dbxIcDioL._SX3000_.jpg" alt="" />
-      
-      <div className='home_row'>
-        <Product tittle="gaming headphones with mic"price="7.99" rating={3}image="https://m.media-amazon.com/images/I/71rmFKMuT2L._AC_SY200_.jpg"/>
-        <Product tittle="Xbox 360 black" price="500"rating={4} image="https://m.media-amazon.com/images/I/61-jjE67uqL._AC_SY200_.jpg" />
-      </div>
-      <div className='home_row'>
-      <Product tittle="Wakefit mattress" price="50"rating={4} image="https://m.media-amazon.com/images/I/71B0vbMooUL._AC_SY200_.jpg" />
-      <Product tittle="Body wash" price="5"rating={4} image="https://m.media-amazon.com/images/I/612cESaz2aL._AC_SY200_.jpg" />
-      <Product tittle="Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Blue (10th Generation)" price="490"rating={4} image="https://m.media-amazon.com/images/I/61uA2UVnYWL._AC_SY110_.jpg" />
-      
-      </div>
-      <div className='home_row'>
-      <Product tittle="Sony Digital Vlog Camera ZV 1 " price="1000"rating={5} image="https://m.media-amazon.com/images/I/31pfDWmdnVL._AC_SY200_.jpg" />
-      <Product tittle="Handheld 3-Axis Smartphone Gimbal Stabilizer with Grip Tripod LED Fill Light" price="100"rating={2} image="https://m.media-amazon.com/images/I/61Gj7P7JBJS._AC_UL480_FMwebp_QL65_.jpg" />
-      <Product tittle="AUGEN Super Hero Captian Action America Figure Limited Edition Bobblehead " price="10"rating={4} image="https://m.media-amazon.com/images/I/41UEWaZDj2S._AC_SY110_.jpg" />
-      <Product tittle="Klaxon Noah Wood & Metal Coffee Table - Asian Walnut & Black (DIY)" price="150"rating={3} image="https://m.media-amazon.com/images/I/71Y8g-MtZrL._AC_SY200_.jpg" />
-      </div>
-      
+    <div className="home">
+      <div className="home__container">
+        <img
+          className="home__image"
+          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          alt=""
+        />
+
+        <div className="home__row">
+          <Product
+            id="12321341"
+            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+          />
+          <Product
+            id="49538094"
+            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+            price={239.0}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="4903850"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price={199.99}
+            rating={3}
+            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+          />
+          <Product
+            id="23445930"
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            price={98.99}
+            rating={5}
+            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+          />
+          <Product
+            id="3254354345"
+            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+            price={598.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />
+        </div>
       </div>
     </div>
-  )
+  );
 }
+
+export default Home;
